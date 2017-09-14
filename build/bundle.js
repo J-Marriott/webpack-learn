@@ -68,19 +68,23 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
+"use strict";
 const sum = (a, b) => a + b;
 
-module.exports = sum;
+/* harmony default export */ exports["a"] = sum;
 
 /***/ },
 /* 1 */
 /***/ function(module, exports, __webpack_require__) {
 
-const sum = __webpack_require__(0);
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__sum__ = __webpack_require__(0);
 
-const total = sum(10, 5);
+
+const total = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__sum__["a" /* default */])(10, 5);
 console.log(total);
 
 /***/ }
